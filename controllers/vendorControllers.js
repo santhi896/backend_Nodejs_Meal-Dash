@@ -32,7 +32,7 @@ const vendorRegister = async (req, res) => {
 
     } catch (error) {
         console.error(" Registration error:", error.message);
-        res.status(500).json({ error: "Internal server error", details: error.message });
+        res.status(500).json({ error: "Internal server error" });
     }
 };
 
